@@ -1,0 +1,52 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess login page</title>
+</head>
+<body>
+    <div class="form">
+        <form class="login-form" action="" method="post">
+        <i><img src="kitchen.png" alt=""></i>
+        <input class="user-input" type="text" placeholder="Username" required>
+        <input class="user-input" type="password" placeholder="Password" required>
+        <div class="options-01">
+            <label class="remember-me"> <input type="checkbox">Remember me</label>
+            <a href="#"> Forgot Your Password</a>
+        </div>
+        <input class="btn" type="submit" value="LOGIN">
+        <div class="options-02">
+            <p>Not Registered? <a href="#">Create an Account</a></p>
+        </div>
+    </form>
+
+
+    <form action="" class="signup-form" method="post">
+        <i><img src="kitchen.png" alt=""></i>
+        <input class="user-input" type="text" placeholder="Username" required>
+        <input class="user-input" type="email" placeholder="Email Adress" required>
+        <input class="user-input" type="password" placeholder="Password" required>
+        <input class="btn" type="submit" value="SIGN UP">
+        <div class="options-02">
+            <p>Already Registered? <a href="#">Sign In</a></p>
+        </div>
+    </form>
+
+    </div>
+
+
+    <script type="text/javascript">
+        $('.options-02 a').click(function(){
+            $('form').animate({
+             height: "toggle",opacity:"toggel"   
+            },"slow");
+        });
+    </script>
+
+</body>
+</html> 
